@@ -1,12 +1,8 @@
-# FPGA数据流位宽转换模块
+# 工件扫描点云配准库
 
-初始目录仅准备仿真环境依赖，尚未包含业务RTL或业务测试。
+初始项目仅包含Eigen3.4.0头文件与构建环境说明，尚无业务实现。
 
-本机工具：SystemVerilog2012语言模式、Icarus Verilog11.0、GNU Make4.3、Python3.10.12。
-项目依赖：cocotb1.9.2、find-libpython0.5.1，已安装在本目录.venv。
-
-直接使用iverilog、vvp、make；项目Python使用.venv/bin/python，无需激活环境。
-cocotb.runner可通过项目Python导入并调用Icarus；cocotb配置查询入口是.venv/bin/cocotb-config。
-具体模块、测试和示例运行命令由实现补充。
-
-依赖恢复：创建Python3.10虚拟环境后，使用.venv/bin/python -m pip install -r requirements.txt。
+- C++17，GCC11.4.0，可直接使用g++。
+- GNU Make4.3，可直接使用make。
+- Eigen3.4.0位于third_party/eigen3，编译时使用-std=c++17和-Ithird_party/eigen3。
+- Eigen来自Ubuntu22.04的libeigen3-dev=3.4.0-2ubuntu2包，版权与许可见third_party/eigen3/COPYRIGHT。

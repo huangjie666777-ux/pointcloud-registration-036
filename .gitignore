@@ -1,13 +1,5 @@
-.venv/
-__pycache__/
-*.pyc
-sim_build/
 build/
-*.vvp
-*.vcd
-*.fst
-results.xml
-.env
-.env.*
-*.pem
-*.key
+.build/
+*.o
+*.a
+*.so
